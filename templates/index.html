@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>My personal portfolio website</title>
+        <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='assets/img/profile.jpg') }}" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+            <a class="navbar-brand  " href="#page-top">
+                <span class="d-block d-lg-none">Fahadul Islam Shadhin</span>
+                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="{{ url_for('static', filename='assets/img/profile.jpg') }}" alt="" /></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#interests">Interests</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact Me</a></li>
+                    <li class="nav-item"><a target="_blank" class="nav-link  " href="{{ url_for('static', filename='assets/pdf/shadhin_resume.pdf') }}">Download My Resume</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Page Content-->
+        <div class="container-fluid p-0">
+            <!-- About-->
+            <section class="resume-section" id="about">
+                <div class="resume-section-content">
+                    <h1 class="mb-0">
+                        Fahadul Islam
+                        <span class="text-primary">Shadhin</span>
+                    </h1>
+                    <div class="subheading mb-5">
+                        <a href="mailto:fahadulshadhin17@gmail.com">fahadulshadhin17@gmail.com</a>
+                    </div>
+                    <p class="lead mb-5">I am a 3rd year undergraduate student studying Computer Science & Engineering.</p>
+                    <div class="social-icons">
+                        <a class="social-icon" target="_blank" href="https://github.com/FahadulShadhin"><i class="fab fa-github"></i></a>
+                        <a class="social-icon" target="_blank" href="https://www.linkedin.com/in/fahadul-shadhin"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="social-icon" target="_blank" href="https://www.hackerrank.com/Fahadulshadhin17"><i class="fab fa-hackerrank"></i></a>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Education-->
+            <section class="resume-section" id="education">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Education</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Chittagong University of Engineering & Technology</h3>
+                            <div class="subheading mb-3">Bachelor of Science</div>
+                            <div style="font-size: 1.15em;">Computer Science & Engineering</div>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">Expected Graduation - 2022</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Dhaka Imperial College</h3>
+                            <div class="subheading mb-3">Higher Secondary School Certificate(H.S.C)</div>
+                            <p>Group: Science</p>
+                            <p>GPA: 5.00(on a scale of 5.00)</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">2017</span></div>
+                    </div>
+                    <br>
+                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Rani Bilasmoni Govt. Boys' High School, Gazipur</h3>
+                            <div class="subheading mb-3">Secondary School Certificate(S.S.C)</div>
+                            <p>Group: Science</p>
+                            <p>GPA: 5.00(on a scale of 5.00)</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">2015</span></div>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Skills-->
+            <section class="resume-section" id="skills"> 
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Skills</h2>
+                    <div class="subheading mb-3">Programming Languages & Tools</div>
+                    <ul class="list-inline">
+                        <li class="list-inline-item" style="font-size: 1.25em;">Python |</li>
+                        <li class="list-inline-item" style="font-size: 1.25em;">C/C++ |</li>
+                        <li class="list-inline-item" style="font-size: 1.25em;">Django |</li>
+                        <li class="list-inline-item" style="font-size: 1.25em;">Flask |</li>
+                        <li class="list-inline-item" style="font-size: 1.25em;">Html & CSS, Bootstrap |</li>
+                        <li class="list-inline-item" style="font-size: 1.25em;">Javascript |</li>
+                        <li class="list-inline-item" style="font-size: 1.25em;">Linux |</li>
+                        <li class="list-inline-item" style="font-size: 1.25em;">Git & Github</li>
+                    </ul>
+                    <!-- <div class="subheading mb-3"></div> -->
+                    <ul class="fa-ul mb-0">
+                        <li >
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Web developement
+                        </li>
+                        <li >
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Object-oriented programming
+                        </li>
+                        <li >
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Algorithm design & analysis, Data structures
+                        </li>
+                    </ul>
+                    <br>
+                    <a target="_blank" href="{{ url_for('static', filename='assets/pdf/shadhin_resume.pdf') }}">---> Download my resume</a>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Projects-->
+            <section class="resume-section" id="projects">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Projects</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Sorting Algorithms Visualizer</h3>
+                            <div class="subheading mb-3">Python | Tkinter | Desktop app</div>
+                            <ul>
+                                <li>A desktop application to graphically visualize various sorting algorithms.</li>
+                                <li>Implemented 7 different sorting algorithms: Bubble Sort, Insertion Sort, Selection Sort, Merge Sort, Quick Sort, Heap Sort and Counting Sort.</li>
+                            </ul>  
+                            <a class="social-icon" href="https://github.com/FahadulShadhin/Sorting-Algorithms-Visualizer" target="-blank"><i class="fab fa-github"></i> Source code at github</a>
+                        </div>
+                        <!-- <div class="flex-shrink-0"><span class="text-primary">March 2013 - Present</span></div> -->
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Brikkho-dot-com</h3>
+                            <div class="subheading mb-3">Python | Django | SQLite | HTML | CSS | Bootstrap | Javascript | Web app</div>
+                            <ul>
+                                <li>A full stack web application for shopping agricultural products</li>
+                                <li>User registration, login and logout functionality</li>
+                                <li>Edit user profile, add informations, change password</li>
+                                <li>Product Categories</li>
+                                <li>Shopping cart functionality</li>
+                                <li>Shopping facility for guest users without registration</li>
+                                <li>Payment options</li>
+                                <li>Responsive user interface</li>
+                            </ul>
+                            <a class="social-icon" href="https://github.com/FahadulShadhin/BRIKKHO-dot-com" target="_blank"><i class="fab fa-github"></i> Source code at github</a>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Password Manager</h3>
+                            <div class="subheading mb-3">Python | SQLite</div>
+                            <ul>
+                                <li>A python script to create secure passwords and store them safely in a database.</li>
+                            </ul>
+                            <a class="social-icon" href="https://github.com/FahadulShadhin/Password-Manager" target="_blank"><i class="fab fa-github"></i> Source code at github</a>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Django Login System</h3>
+                            <div class="subheading mb-3">Python | Django | Bootstrap | Web app</div>
+                            <ul>
+                                <li>A simple web application to handle sign up, login and logout using Django authentication system.</li>
+                            </ul>
+                            <a class="social-icon" href="https://github.com/FahadulShadhin/django_login_system" target="_blank"><i class="fab fa-github"></i> Source code at github</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Interests-->
+            <section class="resume-section" id="interests">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Interests</h2>
+                    <ul class="list-inline">
+                        <li class="list-inline-item" style="font-size: 1.25em;">Machine learning |</li>
+                        <li class="list-inline-item" style="font-size: 1.25em;">Deep learning |</li>
+                        <li class="list-inline-item" style="font-size: 1.25em;">Data science |</li>
+                        <li class="list-inline-item" style="font-size: 1.25em;">Android & IOS development</li>
+                    </ul>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!--Contact-->
+            <section class="resume-section" id="contact">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Contact Me...</h2>
+                    <div class="container">
+                        <form action="/submit_form" method="POST">
+                      
+                          <label for="fname">Your Name</label>
+                          <input type="text" id="fname" name="name" placeholder="Your name here...">
+                      
+                          <label for="lname">Your Email</label>
+                          <input type="text" id="lname" name="email" placeholder="Your email here...">
+                      
+                          <!-- <label for="country">Country</label>
+                          <select id="country" name="country">
+                            <option value="australia">Australia</option>
+                            <option value="canada">Canada</option>
+                            <option value="usa">USA</option>
+                          </select> -->
+                      
+                          <label for="subject">Your Message</label>
+                          <textarea id="subject" name="message" placeholder="Write something..." style="height:200px"></textarea>
+                      
+                          <input type="submit" value="Submit">
+                      
+                        </form>
+                      </div>
+                </div>
+            </section>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        
+        <!-- Core theme JS-->
+        <!-- <script href="{{ url_for('static', filename='js/scripts.js') }}"></script> -->
+    </body>
+</html>
